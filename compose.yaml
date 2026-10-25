@@ -1,0 +1,8 @@
+# サービス定義は docker/compose.yaml
+# 変数はルートの .env（Docker用）と src/.env（Laravel用）の両方から読む（重複時は後者が優先）
+include:
+  - path: ./docker/compose.yaml
+    project_directory: .
+    env_file:
+      - ./.env
+      - ./src/.env

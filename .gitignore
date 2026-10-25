@@ -1,0 +1,10 @@
+.env
+.envrc
+.DS_Store
+.vscode
+.idea
+.post
+
+*.bak
+
+data
